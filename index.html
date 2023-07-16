@@ -540,979 +540,1079 @@
 	 height: 1.116600%;
 	 mix-blend-mode: multiply;
 	 }
-
-	 #schedule-container {
-      position: absolute;
-      top: 20px;
-      left: 800px;
-      width: 400px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      background-color: #f9f9f9;
+    #header {
+        display: flex;
+        background-color: rgba(46,86,160,255);
+        color: #fff;
+        margin-bottom: 1%;
     }
 
+    #site-name {
+        font-size: 120%;
+        font-weight: bold;
+        margin: auto;
+    }
+        #site-name:hover {
+            cursor: pointer;
+        }
+
+
+    #schedule-container {
+        padding: 1%;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+        order: 1;
+    }
+
+        #schedule-container th {
+            white-space: nowrap;
+        }
+
+    #main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main-image{
+		width: 100%;
+		overflow: auto;
+		order: 2
+    }
     
 
 </style>
 </head>
 <body>
-	<div id="image-container">
-		<img id="image" src="1-2.png" alt="">
-
-		<div id="room1-2">
-			<div id="overlay1"></div>
-			<div id="overlay2"></div>
-			<div id="overlay2121A"></div>
-			<div id="overlay2122"></div>
-			<div id="overlay2123"></div>
-			<div id="overlay2124"></div>
-			<div id="overlay2131"></div>
-			<div id="overlay2132"></div>
-			<div id="overlay2141A"></div>
-			<div id="overlay2141B"></div>
-			<div id="overlay2142A"></div>
-			<div id="overlay2142B"></div>
-			<div id="overlay2142C"></div>
-			<div id="overlay2142D"></div>
-			<div id="overlayE1"></div>
-			<div id="overlayE2"></div>
-			<div id="overlayE3"></div>
-			<div id="overlay2211A"></div>
-			<div id="overlay2211B"></div>
-			<div id="overlay2212A"></div>
-			<div id="overlay2212B"></div>
-			<div id="overlay2220A"></div>
-			<div id="overlay2220B"></div>
-			<div id="overlay2221A"></div>
-			<div id="overlay2221B"></div>
-			<div id="overlay2222"></div>
-			<div id="overlay2230"></div>
-			<div id="overlay2240A"></div>
-			<div id="overlay2240B"></div>
-			<div id="overlay2240C"></div>
-			<div id="overlay2240D"></div>
-			<div id="overlay2240E"></div>
-			<div id="overlay2240F"></div>
-			<div id="overlay231A"></div>
-			<div id="overlay231B"></div>
-			<div id="overlay231C"></div>
-			<div id="overlay231D"></div>
-			<div id="overlay2311"></div>
-			<div id="overlay2312"></div>
-			<div id="overlay2313"></div>
-			<div id="overlay2314"></div>
-			<div id="overlay2315"></div>
-			<div id="overlay2320"></div>
-			<div id="overlay233A"></div>
-			<div id="overlay233B"></div>
-			<div id="overlay233CD"></div>
-			<div id="overlay234A"></div>
-			<div id="overlay234B"></div>
-			<div id="overlay2331"></div>
-			<div id="overlay2332"></div>
-			<div id="overlay2333"></div>
-			<div id="overlay2334"></div>
-			<div id="overlay2341"></div>
-			<div id="overlay2342"></div>
-			<div id="overlay234C"></div>
-			<div id="overlay1407"></div>
-			<div id="overlay1208"></div>
-			<div id="overlay1209"></div>
-			<div id="overlay1312"></div>
+	<header id="header">
+		<div id="site-name">
+			<p>鳩キャン教室ナビ</p>
 		</div>
-	</div>
+	</header>
+	<main id="main">
+	<div id="main-image">
+		<div id="image-container">
+			<img id="image" src="1-2.png" alt="">
+			<div id="room1-2">
+				<div id="overlay1"></div>
+			    <div id="overlay2"></div>
+			    <div id="overlay2121A"></div>
+			    <div id="overlay2122"></div>
+			    <div id="overlay2123"></div>
+			    <div id="overlay2124"></div>
+			    <div id="overlay2131"></div>
+			    <div id="overlay2132"></div>
+			    <div id="overlay2141A"></div>
+			    <div id="overlay2141B"></div>
+			    <div id="overlay2142A"></div>
+			    <div id="overlay2142B"></div>
+			    <div id="overlay2142C"></div>
+			    <div id="overlay2142D"></div>
+			    <div id="overlayE1"></div>
+			    <div id="overlayE2"></div>
+			    <div id="overlayE3"></div>
+			    <div id="overlay2211A"></div>
+			    <div id="overlay2211B"></div>
+			    <div id="overlay2212A"></div>
+			    <div id="overlay2212B"></div>
+			    <div id="overlay2220A"></div>
+			    <div id="overlay2220B"></div>
+			    <div id="overlay2221A"></div>
+			    <div id="overlay2221B"></div>
+			    <div id="overlay2222"></div>
+			    <div id="overlay2230"></div>
+			    <div id="overlay2240A"></div>
+			    <div id="overlay2240B"></div>
+			    <div id="overlay2240C"></div>
+			    <div id="overlay2240D"></div>
+			    <div id="overlay2240E"></div>
+			    <div id="overlay2240F"></div>
+			    <div id="overlay231A"></div>
+			    <div id="overlay231B"></div>
+			    <div id="overlay231C"></div>
+			    <div id="overlay231D"></div>
+			    <div id="overlay2311"></div>
+			    <div id="overlay2312"></div>
+			    <div id="overlay2313"></div>
+			    <div id="overlay2314"></div>
+			    <div id="overlay2315"></div>
+			    <div id="overlay2320"></div>
+			    <div id="overlay233A"></div>
+			    <div id="overlay233B"></div>
+			    <div id="overlay233CD"></div>
+			    <div id="overlay234A"></div>
+			    <div id="overlay234B"></div>
+			    <div id="overlay2331"></div>
+			    <div id="overlay2332"></div>
+			    <div id="overlay2333"></div>
+			    <div id="overlay2334"></div>
+			    <div id="overlay2341"></div>
+			    <div id="overlay2342"></div>
+			    <div id="overlay234C"></div>
+			    <div id="overlay1407"></div>
+			    <div id="overlay1208"></div>
+			    <div id="overlay1209"></div>
+			    <div id="overlay1312"></div>
+			</div>
+	    </div>
+    </div>
 
 	<div id="schedule-container"></div>
 
+	</main>
 
-    <script>
-        // 画像の一部の色を変える関数
-        // ここで階層データを作りたい ex 曜日[時限[教室番号]]　　ゆくゆくはExcelのデータから自動的にとりた
-        // CSVファイルを取得
-             let csv = new XMLHttpRequest();
-      
-            // CSVファイルへのパス
-            csv.open("GET", "1_2.csv", false);
-        
-            // csvファイル読み込み失敗時のエラー対応
-            try {
-                csv.send(null);
-            } catch (err) {
-                console.log(err);
-            }
-        
-            // 配列を定義
-            let csvArray = [];
-                
-            // 改行ごとに配列化
-            let lines = csv.responseText.split(/\r\n|\n/);
-                
-            // 1行ごとに処理
-            for (let i = 0; i < lines.length; ++i) {
-                let cells = lines[i].split(",");
-                if (cells.length != 1) {
-                csvArray.push(cells);
-                }
-            }
-			console.log("OK");       // コンソールに配列を出力
 
-	function displaySchedule(classroom) {
-    	var scheduleContainer = document.getElementById("schedule-container");
-    	scheduleContainer.innerHTML = ""; // 内容をクリア
+	<script>
 
-    	var scheduleInfo = [];
-
-    	for (var i = 1; i <= 5; i++) {
-        	for (var j = 0; j < csvArray.length; j++) {
-          		var day = parseInt(csvArray[j][1]);
-          		var classTime = parseInt(csvArray[j][2]);
-          		var classroomNum = parseInt(csvArray[j][7]);
-
-          		if (day == Days + 1 && classTime == i && classroomNum == classroom) {
-            		scheduleInfo.push(csvArray[j]);
-          		}
-        	}
-      	}
-
-	if (scheduleInfo.length === 0) {
-    	var noScheduleMessage = document.createElement("p");
-    	noScheduleMessage.textContent = "本日使用予定の授業はありません";
-    	scheduleContainer.appendChild(noScheduleMessage);
-    	return;
-  	}
-      var scheduleTable = document.createElement("table");
-      scheduleTable.classList.add("schedule-table");
-
-      var tableHeader = document.createElement("tr");
-
-      var tableHeaderTime = document.createElement("th");
-      tableHeaderTime.textContent = "時限";
-      tableHeader.appendChild(tableHeaderTime);
-
-      var tableHeaderSubject = document.createElement("th");
-      tableHeaderSubject.textContent = "科目";
-      tableHeader.appendChild(tableHeaderSubject);
-
-      scheduleTable.appendChild(tableHeader);
-
-      for (var k = 0; k < scheduleInfo.length; k++) {
-        var scheduleRow = document.createElement("tr");
-
-        var timeCell = document.createElement("td");
-        timeCell.textContent = scheduleInfo[k][2];
-        scheduleRow.appendChild(timeCell);
-
-        var subjectCell = document.createElement("td");
-        subjectCell.textContent = scheduleInfo[k][0];
-        scheduleRow.appendChild(subjectCell);
-
-        scheduleTable.appendChild(scheduleRow);
-      }
-
-      scheduleContainer.appendChild(scheduleTable);
-    }
-
-	function addClickListeners() {
-    	var overlay1 = document.getElementById("overlay1");
-    	var overlay2 = document.getElementById("overlay2");
-    	var overlay2121A = document.getElementById("overlay2121A");
-    	var overlay2122 = document.getElementById("overlay2122");
-    	var overlay2123 = document.getElementById("overlay2123");
-    	var overlay2124 = document.getElementById("overlay2124");
-    	var overlay2131 = document.getElementById("overlay2131");
-    	var overlay2132 = document.getElementById("overlay2132");
-    	var overlay2141A = document.getElementById("overlay2141A");
-    	var overlay2141B = document.getElementById("overlay2141B");
-    	var overlay2142A = document.getElementById("overlay2142A");
-    	var overlay2142B = document.getElementById("overlay2142B");
-		var overlay2142C = document.getElementById("overlay2142C");
-    	var overlay2142D = document.getElementById("overlay2142D");
-    	var overlayE1 = document.getElementById("overlayE1");
-    	var overlayE2 = document.getElementById("overlayE2");
-    	var overlayE3 = document.getElementById("overlayE3");
-    	var overlay2211A = document.getElementById("overlay2211A");
-    	var overlay2211B = document.getElementById("overlay2211B");
-    	var overlay2212A = document.getElementById("overlay2212A");
-    	var overlay2212B = document.getElementById("overlay2212B");
-    	var overlay2220A = document.getElementById("overlay2220A");
-    	var overlay2220B = document.getElementById("overlay2220B");
-    	var overlay2221A = document.getElementById("overlay2221A");
-		var overlay2221B = document.getElementById("overlay2221B");
-    	var overlay2222 = document.getElementById("overlay2222");
-    	var overlay2230 = document.getElementById("overlay2230");
-    	var overlay2240A = document.getElementById("overlay2240A");
-    	var overlay2240B = document.getElementById("overlay2240B");
-    	var overlay2240C = document.getElementById("overlay2240C");
-    	var overlay2240D= document.getElementById("overlay2240D");
-    	var overlay2240E = document.getElementById("overlay2240E");
-    	var overlay2240F = document.getElementById("overlay2240F");
-    	var overlay231A = document.getElementById("overlay231A");
-    	var overlay231B = document.getElementById("overlay231B");
-    	var overlay231C = document.getElementById("overlay231C");
-		var overlay231D = document.getElementById("overlay231D");
-    	var overlay2311 = document.getElementById("overlay2311");
-    	var overlay2312 = document.getElementById("overlay2312");
-    	var overlay2313 = document.getElementById("overlay2313");
-    	var overlay2314 = document.getElementById("overlay2314");
-    	var overlay2315 = document.getElementById("overlay2315");
-    	var overlay2320 = document.getElementById("overlay2320");
-    	var overlay233A = document.getElementById("overlay233A");
-    	var overlay233B = document.getElementById("overlay233B");
-    	var overlay233CD = document.getElementById("overlay233CD");
-    	var overlay234A = document.getElementById("overlay234A");
-    	var overlay234B = document.getElementById("overlay234B");
-		var overlay2331 = document.getElementById("overlay2331");
-    	var overlay2332 = document.getElementById("overlay2332");
-    	var overlay2333 = document.getElementById("overlay2333");
-    	var overlay2334 = document.getElementById("overlay2334");
-    	var overlay2341 = document.getElementById("overlay2341");
-    	var overlay2342 = document.getElementById("overlay2342");
-    	var overlay234C = document.getElementById("overlay234C");
-    	var overlay1407 = document.getElementById("overlay1407");
-    	var overlay1208 = document.getElementById("overlay1208");
-    	var overlay1209 = document.getElementById("overlay1209");
-    	var overlay1312 = document.getElementById("overlay1312");
-
-      overlay1.addEventListener("click", function() {
-        // オーバーレイ212がクリックされたときの処理
-		displaySchedule(0);
-      });
-
-	  overlay2.addEventListener("click", function() {
-        // オーバーレイ211がクリックされたときの処理
-		displaySchedule(1);
-      });
-
-	  overlay2121A.addEventListener("click", function() {
-        // オーバーレイ210がクリックされたときの処理
-		displaySchedule(2);
-      });
-
-	  overlay2122.addEventListener("click", function() {
-        // オーバーレイ209がクリックされたときの処理
-		displaySchedule(3);
-      });
-
-	  overlay2123.addEventListener("click", function() {
-        // オーバーレイ208がクリックされたときの処理
-		displaySchedule(4);
-      });
-
-	  overlay2124.addEventListener("click", function() {
-        // オーバーレイ207がクリックされたときの処理
-		displaySchedule(5);
-      });
-
-	  overlay2131.addEventListener("click", function() {
-        // オーバーレイ206がクリックされたときの処理
-		displaySchedule(6);
-      });
-
-	  overlay2132.addEventListener("click", function() {
-        // オーバーレイ204がクリックされたときの処理
-		displaySchedule(7);
-      });
-
-	  overlay2141A.addEventListener("click", function() {
-        // オーバーレイ203がクリックされたときの処理
-		displaySchedule(8);
-      });
-
-	  overlay2141B.addEventListener("click", function() {
-        // オーバーレイ201がクリックされたときの処理
-		displaySchedule(9);
-      });
-
-	  overlay2142A.addEventListener("click", function() {
-        // オーバーレイ117がクリックされたときの処理
-		displaySchedule(10);
-      });
-
-	  overlay2142B.addEventListener("click", function() {
-        // オーバーレイ213がクリックされたときの処理
-		displaySchedule(11);
-      });
-
-	  overlay2142C.addEventListener("click", function() {
-        // オーバーレイ212がクリックされたときの処理
-		displaySchedule(12);
-      });
-
-	  overlay2142D.addEventListener("click", function() {
-        // オーバーレイ210がクリックされたときの処理
-		displaySchedule(13);
-      });
-
-	  overlayE1.addEventListener("click", function() {
-        // オーバーレイ209がクリックされたときの処理
-		displaySchedule(14);
-      });
-
-	  overlayE2.addEventListener("click", function() {
-        // オーバーレイ208がクリックされたときの処理
-		displaySchedule(15);
-      });
-
-	  overlayE3.addEventListener("click", function() {
-        // オーバーレイ207がクリックされたときの処理
-		displaySchedule(16);
-      });
-
-	  overlay2211A.addEventListener("click", function() {
-        // オーバーレイ206がクリックされたときの処理
-		displaySchedule(17);
-      });
-
-	  overlay2211B.addEventListener("click", function() {
-        // オーバーレイ204がクリックされたときの処理
-		displaySchedule(18);
-      });
-
-	  overlay2212A.addEventListener("click", function() {
-        // オーバーレイ203がクリックされたときの処理
-		displaySchedule(19);
-      });
-
-	  overlay2212B.addEventListener("click", function() {
-        // オーバーレイ201がクリックされたときの処理
-		displaySchedule(20);
-      });
-
-	  overlay2220A.addEventListener("click", function() {
-        // オーバーレイ117がクリックされたときの処理
-		displaySchedule(21);
-      });
-
-	  overlay2220B.addEventListener("click", function() {
-        // オーバーレイ213がクリックされたときの処理
-		displaySchedule(22);
-      });
-
-	  overlay2221A.addEventListener("click", function() {
-        // オーバーレイ212がクリックされたときの処理
-		displaySchedule(23);
-      });
-
-	  overlay2221B.addEventListener("click", function() {
-        // オーバーレイ211がクリックされたときの処理
-		displaySchedule(24);
-      });
-
-	  overlay2222.addEventListener("click", function() {
-        // オーバーレイ210がクリックされたときの処理
-		displaySchedule(25);
-      });
-
-	  overlay2230.addEventListener("click", function() {
-        // オーバーレイ209がクリックされたときの処理
-		displaySchedule(26);
-      });
-
-	  overlay2240A.addEventListener("click", function() {
-        // オーバーレイ208がクリックされたときの処理
-		displaySchedule(27);
-      });
-
-	  overlay2240B.addEventListener("click", function() {
-        // オーバーレイ207がクリックされたときの処理
-		displaySchedule(28);
-      });
-
-	  overlay2240C.addEventListener("click", function() {
-        // オーバーレイ206がクリックされたときの処理
-		displaySchedule(29);
-      });
-
-	  overlay2240D.addEventListener("click", function() {
-        // オーバーレイ204がクリックされたときの処理
-		displaySchedule(30);
-      });
-
-	  overlay2240E.addEventListener("click", function() {
-        // オーバーレイ203がクリックされたときの処理
-		displaySchedule(31);
-      });
-
-	  overlay2240F.addEventListener("click", function() {
-        // オーバーレイ201がクリックされたときの処理
-		displaySchedule(32);
-      });
-
-	  overlay231A.addEventListener("click", function() {
-        // オーバーレイ117がクリックされたときの処理
-		displaySchedule(33);
-      });
-
-	  overlay231B.addEventListener("click", function() {
-        // オーバーレイ213がクリックされたときの処理
-		displaySchedule(34);
-      });
-
-	  overlay231C.addEventListener("click", function() {
-        // オーバーレイ212がクリックされたときの処理
-		displaySchedule(35);
-      });
-
-	  overlay231D.addEventListener("click", function() {
-        // オーバーレイ211がクリックされたときの処理
-		displaySchedule(36);
-      });
-
-	  overlay2311.addEventListener("click", function() {
-        // オーバーレイ210がクリックされたときの処理
-		displaySchedule(37);
-      });
-
-	  overlay2312.addEventListener("click", function() {
-        // オーバーレイ209がクリックされたときの処理
-		displaySchedule(38);
-      });
-
-	  overlay2313.addEventListener("click", function() {
-        // オーバーレイ208がクリックされたときの処理
-		displaySchedule(39);
-      });
-
-	  overlay2314.addEventListener("click", function() {
-        // オーバーレイ207がクリックされたときの処理
-		displaySchedule(40);
-      });
-
-	  overlay2315.addEventListener("click", function() {
-        // オーバーレイ206がクリックされたときの処理
-		displaySchedule(41);
-      });
-
-	  overlay2320.addEventListener("click", function() {
-        // オーバーレイ204がクリックされたときの処理
-		displaySchedule(42);
-      });
-
-	  overlay233A.addEventListener("click", function() {
-        // オーバーレイ203がクリックされたときの処理
-		displaySchedule(43);
-      });
-
-	  overlay233B.addEventListener("click", function() {
-        // オーバーレイ201がクリックされたときの処理
-		displaySchedule(44);
-      });
-
-	  overlay233CD.addEventListener("click", function() {
-        // オーバーレイ117がクリックされたときの処理
-		displaySchedule(45);
-      });
-
-	  overlay234A.addEventListener("click", function() {
-        // オーバーレイ213がクリックされたときの処理
-		displaySchedule(46);
-      });
-
-	  overlay234B.addEventListener("click", function() {
-        // オーバーレイ212がクリックされたときの処理
-		displaySchedule(47);
-      });
-
-	  overlay2331.addEventListener("click", function() {
-        // オーバーレイ211がクリックされたときの処理
-		displaySchedule(48);
-      });
-
-	  overlay2332.addEventListener("click", function() {
-        // オーバーレイ210がクリックされたときの処理
-		displaySchedule(49);
-      });
-
-	  overlay2333.addEventListener("click", function() {
-        // オーバーレイ209がクリックされたときの処理
-		displaySchedule(50);
-      });
-
-	  overlay2334.addEventListener("click", function() {
-        // オーバーレイ208がクリックされたときの処理
-		displaySchedule(51);
-      });
-
-	  overlay2342.addEventListener("click", function() {
-        // オーバーレイ207がクリックされたときの処理
-		displaySchedule(52);
-      });
-
-	  overlay234C.addEventListener("click", function() {
-        // オーバーレイ206がクリックされたときの処理
-		displaySchedule(53);
-      });
-
-	  overlay1407.addEventListener("click", function() {
-        // オーバーレイ204がクリックされたときの処理
-		displaySchedule(54);
-      });
-
-	  overlay1208.addEventListener("click", function() {
-        // オーバーレイ203がクリックされたときの処理
-		displaySchedule(55);
-      });
-
-	  overlay1209.addEventListener("click", function() {
-        // オーバーレイ201がクリックされたときの処理
-		displaySchedule(56);
-      });
-
-	  overlay1312.addEventListener("click", function() {
-        // オーバーレイ117がクリックされたときの処理
-		displaySchedule(57);
-      });
-
-	}
-    function changeColor() {	
-      //ここも必要数に応じて増やさなければいけない
-       var overlay1= document.getElementById("overlay1");
-	   var overlay2= document.getElementById("overlay2");
-	   var overlay2121A= document.getElementById("overlay2121A");
-	   var overlay2122= document.getElementById("overlay2122");
-	   var overlay2123= document.getElementById("overlay2123");
-	   var overlay2124= document.getElementById("overlay2124");
-	   var overlay2131= document.getElementById("overlay2131");
-	   var overlay2132= document.getElementById("overlay2132");
-	   var overlay2141A= document.getElementById("overlay2141A");
-	   var overlay2141B= document.getElementById("overlay2141B");
-	   var overlay2142A= document.getElementById("overlay2142A");
-	   var overlay2142B= document.getElementById("overlay2142B");
-	   var overlay2142C= document.getElementById("overlay2142C");
-	   var overlay2142D= document.getElementById("overlay2142D");
-	   var overlayE1= document.getElementById("overlayE1");
-	   var overlayE2= document.getElementById("overlayE2");
-	   var overlayE3= document.getElementById("overlayE3");
-	   var overlay2211A= document.getElementById("overlay2211A");
-	   var overlay2211B= document.getElementById("overlay2211B");
-	   var overlay2212A= document.getElementById("overlay2212A");
-	   var overlay2212B= document.getElementById("overlay2212B");
-	   var overlay2220A= document.getElementById("overlay2220A");
-	   var overlay2220B= document.getElementById("overlay2220B");
-	   var overlay2221A= document.getElementById("overlay2221A");
-	   var overlay2221B= document.getElementById("overlay2221B");
-	   var overlay2222= document.getElementById("overlay2222");
-	   var overlay2230= document.getElementById("overlay2230");
-	   var overlay2240A= document.getElementById("overlay2240A");
-	   var overlay2240B= document.getElementById("overlay2240B");
-	   var overlay2240C= document.getElementById("overlay2240C");
-	   var overlay2240D= document.getElementById("overlay2240D");
-	   var overlay2240E= document.getElementById("overlay2240E");
-	   var overlay2240F= document.getElementById("overlay2240F");
-	   var overlay231A= document.getElementById("overlay231A");
-	   var overlay231B= document.getElementById("overlay231B");
-	   var overlay231C= document.getElementById("overlay231C");
-	   var overlay231D= document.getElementById("overlay231D");
-	   var overlay2311= document.getElementById("overlay2311");
-	   var overlay2312= document.getElementById("overlay2312");
-	   var overlay2313= document.getElementById("overlay2313");
-	   var overlay2314= document.getElementById("overlay2314");
-	   var overlay2315= document.getElementById("overlay2315");
-	   var overlay2320= document.getElementById("overlay2320");
-	   var overlay233A= document.getElementById("overlay233A");
-	   var overlay233B= document.getElementById("overlay233B");
-	   var overlay233CD= document.getElementById("overlay233CD");
-	   var overlay234A= document.getElementById("overlay234A");
-	   var overlay234B= document.getElementById("overlay234B");
-	   var overlay2331= document.getElementById("overlay2331");
-	   var overlay2332= document.getElementById("overlay2332");
-	   var overlay2333= document.getElementById("overlay2333");
-	   var overlay2334= document.getElementById("overlay2334");
-	   var overlay2341= document.getElementById("overlay2341");
-	   var overlay2342= document.getElementById("overlay2342");
-	   var overlay234C= document.getElementById("overlay234C");
-	   var overlay1407= document.getElementById("overlay1407");
-	   var overlay1208= document.getElementById("overlay1208");
-	   var overlay1209= document.getElementById("overlay1209");
-	   var overlay1312= document.getElementById("overlay1312");
-        //
-        var currentTime = new Date().getHours();
-        var currentTime_M = new Date().getMinutes();
-        var currentDay = new Date().getDay();
-        var currentYear = new Date().getFullYear(); // 現在の時間を取
-        //ここから
-        // 配列を定義
-        // CSVファイルを取得
-
-        var c_time = [
-        {
-          name: 1,
-          start_h: 9,
-          start_m: 20,
-          end_h: 11,
-          end_m: 0
-        },
-        {
-          name: 2,
-          start_h: 11,
-          start_m: 10,
-          end_h: 12,
-          end_m: 50
-        },
-        {
-          name: 3,
-          start: 13,
-          start_m: 40,
-          end_h: 15,
-          end_m: 20
-        },
-        {
-          name: 4,
-          start_h: 15,
-          start_m: 30,
-          end_h: 17,
-          end_m: 10
-        },
-        {
-          name: 5,
-          start_h: 17,
-          start_m: 20,
-          end_h: 19,
-          end_m: 0
-        },
-        {
-          name: 0,
-          start_h: 0,
-          start_m: 0,
-          end_h: 7,
-          end_m: 0
+        document.getElementById("site-name").onclick = function () {
+            location.href = "https://mae0227.github.io/top/";
         }
-        ]
-		
-        var zero_room = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]//ここもzeros関数を使って教室の数から出したい
-        let currentM = currentTime*60+currentTime_M
-        for(var i=0;i < 6;i++){
-            if(currentM >= (c_time[i]['start_h']*60+c_time[i]['start_m']) && (currentM <= c_time[i]['end_h']*60 + c_time[i]['end_m'])){
-                var rec = c_time[i]['name']
-            }
-         }
-         T = currentTime_M % 25 
-        Days = parseInt(T/5)
-        Class_time = T % 5
-        for(i=0;i < 70;i++){//今は手で数えているがlen等を用いてエクセルを用いて数えたい
-            for(j=0;j < 18;j++){
-             //if(csvArray[i][2] == 2 && csvArray[i][1] == currentDay){//
-                if(csvArray[i][2] == Class_time+1 && csvArray[i][1] == Days+1){
-                    var tmp = csvArray[i][7]
-                    zero_room[tmp] = 1
-                }
-            }
-        }
-        let YOU = ["月","火","水","木","金"]
-        console.log(YOU[Days])
-        console.log(Class_time+1)
-        console.log(currentTime)
-        console.log(currentTime_M )
-        console.log(zero_room)
-      
-         //曜日>>時間>>使用したい教室データ..(321, 325)>>for{if{}}で使いたいインスタンス使用する。それ以外の教室インスタンスは白のオーバーレイを使用
 
-        // 教室ごとに増やさなければいけない
 
-        if (zero_room[0] == 1) {
-		overlay1.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay1.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[1] == 1) {
-		overlay2.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[2] == 1) {
-		overlay2121A.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2121A.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[3] == 1) {
-		overlay2122.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2122.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[4] == 1) {
-		overlay2123.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2123.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[5] == 1) {
-		overlay2124.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2124.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[6] == 1) {
-		overlay2131.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2131.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[7] == 1) {
-		overlay2132.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2132.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[8] == 1) {
-		overlay2141A.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2141A.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[9] == 1) {
-		overlay2141B.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2141B.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[10] == 1) {
-		overlay2142A.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2142A.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[11] == 1) {
-		overlay2142B.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2142B.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[12] == 1) {
-		overlay2142C.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2142C.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[13] == 1) {
-		overlay2142D.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2142D.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[14] == 1) {
-		overlayE1.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlayE1.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[15] == 1) {
-		overlayE2.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlayE2.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[16] == 1) {
-		overlayE3.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlayE3.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[17] == 1) {
-		overlay2211A.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2211A.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[18] == 1) {
-		overlay2211B.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2211B.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[19] == 1) {
-		overlay2212A.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2212A.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[20] == 1) {
-		overlay2212B.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2212B.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[21] == 1) {
-		overlay2220A.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2220A.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[22] == 1) {
-		overlay2220B.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2220B.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[23] == 1) {
-		overlay2221A.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2221A.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[24] == 1) {
-		overlay2221B.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2221B.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[25] == 1) {
-		overlay2222.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2222.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[26] == 1) {
-		overlay2230.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2230.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[27] == 1) {
-		overlay2240A.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2240A.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[28] == 1) {
-		overlay2240B.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2240B.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[29] == 1) {
-		overlay2240C.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2240C.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[30] == 1) {
-		overlay2240D.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2240D.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[31] == 1) {
-		overlay2240E.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2240E.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[32] == 1) {
-		overlay2240F.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2240F.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[33] == 1) {
-		overlay231A.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay231A.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[34] == 1) {
-		overlay231B.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay231B.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[35] == 1) {
-		overlay231C.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay231C.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[36] == 1) {
-		overlay231D.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay231D.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[37] == 1) {
-		overlay2311.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2311.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[38] == 1) {
-		overlay2312.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2312.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[39] == 1) {
-		overlay2313.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2313.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[40] == 1) {
-		overlay2314.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2314.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[41] == 1) {
-		overlay2315.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2315.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[42] == 1) {
-		overlay2320.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2320.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[43] == 1) {
-		overlay233A.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay233A.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[44] == 1) {
-		overlay233B.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay233B.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[45] == 1) {
-		overlay233CD.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay233CD.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[46] == 1) {
-		overlay234A.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay234A.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[47] == 1) {
-		overlay234B.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay234B.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[48] == 1) {
-		overlay2331.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2331.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[49] == 1) {
-		overlay2332.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2332.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[50] == 1) {
-		overlay2333.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2333.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[51] == 1) {
-		overlay2334.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2334.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[52] == 1) {
-		overlay2341.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2341.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[53] == 1) {
-		overlay2342.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay2342.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[54] == 1) {
-		overlay234C.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay234C.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[55] == 1) {
-		overlay1407.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay1407.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[56] == 1) {
-		overlay1208.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay1208.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[57] == 1) {
-		overlay1209.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay1209.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-		if (zero_room[58] == 1) {
-		overlay1312.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
-		} else {;
-		overlay1312.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-		}
-    }
+	// 画像の一部の色を変える関数
+		// ここで階層データを作りたい ex 曜日[時限[教室番号]]　　ゆくゆくはExcelのデータから自動的にとりた
+		// CSVファイルを取得
+		let csv = new XMLHttpRequest();
 
-	 // 初期表示
-	 function initialize() {
-      changeColor();
-      addClickListeners();
-    }
+		// CSVファイルへのパス
+		csv.open("GET", "1_2.csv", false);
 
-	setInterval(initialize, 6000);
-    </script>
+		// csvファイル読み込み失敗時のエラー対応
+		try {
+			csv.send(null);
+		} catch (err) {
+			console.log(err);
+		}
+
+		// 配列を定義
+		let csvArray = [];
+
+		// 改行ごとに配列化
+		let lines = csv.responseText.split(/\r\n|\n/);
+
+		// 1行ごとに処理
+		for (let i = 0; i < lines.length; ++i) {
+			let cells = lines[i].split(",");
+			if (cells.length != 1) {
+				csvArray.push(cells);
+			}
+		}
+		console.log("OK");       // コンソールに配列を出力
+
+		function displaySchedule(classroom) {
+			var scheduleContainer = document.getElementById("schedule-container");
+			scheduleContainer.innerHTML = ""; // 内容をクリア
+
+			var scheduleInfo = [];
+
+			for (var i = 1; i <= 5; i++) {
+				for (var j = 0; j < csvArray.length; j++) {
+					var day = parseInt(csvArray[j][1]);
+					var classTime = parseInt(csvArray[j][2]);
+					var classroomNum = parseInt(csvArray[j][7]);
+
+					if (day == Days + 1 && classTime == i && classroomNum == classroom) {
+						scheduleInfo.push(csvArray[j]);
+					}
+				}
+			}
+
+			if (scheduleInfo.length === 0) {
+				var noScheduleMessage = document.createElement("p");
+				noScheduleMessage.textContent = "本日使用予定の授業はありません";
+				scheduleContainer.appendChild(noScheduleMessage);
+				return;
+			}
+			var scheduleTable = document.createElement("table");
+			scheduleTable.classList.add("schedule-table");
+
+			var tableHeader = document.createElement("tr");
+
+			var tableHeaderTime = document.createElement("th");
+			tableHeaderTime.textContent = "時限";
+			tableHeader.appendChild(tableHeaderTime);
+
+			var tableHeaderSubject = document.createElement("th");
+			tableHeaderSubject.textContent = "科目";
+			tableHeader.appendChild(tableHeaderSubject);
+
+			scheduleTable.appendChild(tableHeader);
+
+			for (var k = 0; k < scheduleInfo.length; k++) {
+				var scheduleRow = document.createElement("tr");
+
+				var timeCell = document.createElement("td");
+				timeCell.textContent = scheduleInfo[k][2];
+				scheduleRow.appendChild(timeCell);
+
+				var subjectCell = document.createElement("td");
+				subjectCell.textContent = scheduleInfo[k][0];
+				scheduleRow.appendChild(subjectCell);
+
+				scheduleTable.appendChild(scheduleRow);
+			}
+
+			scheduleContainer.appendChild(scheduleTable);
+		}
+
+		function addClickListeners() {
+			var overlay1 = document.getElementById("overlay1");
+			var overlay2 = document.getElementById("overlay2");
+			var overlay2121A = document.getElementById("overlay2121A");
+			var overlay2122 = document.getElementById("overlay2122");
+			var overlay2123 = document.getElementById("overlay2123");
+			var overlay2124 = document.getElementById("overlay2124");
+			var overlay2131 = document.getElementById("overlay2131");
+			var overlay2132 = document.getElementById("overlay2132");
+			var overlay2141A = document.getElementById("overlay2141A");
+			var overlay2141B = document.getElementById("overlay2141B");
+			var overlay2142A = document.getElementById("overlay2142A");
+			var overlay2142B = document.getElementById("overlay2142B");
+			var overlay2142C = document.getElementById("overlay2142C");
+			var overlay2142D = document.getElementById("overlay2142D");
+			var overlayE1 = document.getElementById("overlayE1");
+			var overlayE2 = document.getElementById("overlayE2");
+			var overlayE3 = document.getElementById("overlayE3");
+			var overlay2211A = document.getElementById("overlay2211A");
+			var overlay2211B = document.getElementById("overlay2211B");
+			var overlay2212A = document.getElementById("overlay2212A");
+			var overlay2212B = document.getElementById("overlay2212B");
+			var overlay2220A = document.getElementById("overlay2220A");
+			var overlay2220B = document.getElementById("overlay2220B");
+			var overlay2221A = document.getElementById("overlay2221A");
+			var overlay2221B = document.getElementById("overlay2221B");
+			var overlay2222 = document.getElementById("overlay2222");
+			var overlay2230 = document.getElementById("overlay2230");
+			var overlay2240A = document.getElementById("overlay2240A");
+			var overlay2240B = document.getElementById("overlay2240B");
+			var overlay2240C = document.getElementById("overlay2240C");
+			var overlay2240D = document.getElementById("overlay2240D");
+			var overlay2240E = document.getElementById("overlay2240E");
+			var overlay2240F = document.getElementById("overlay2240F");
+			var overlay231A = document.getElementById("overlay231A");
+			var overlay231B = document.getElementById("overlay231B");
+			var overlay231C = document.getElementById("overlay231C");
+			var overlay231D = document.getElementById("overlay231D");
+			var overlay2311 = document.getElementById("overlay2311");
+			var overlay2312 = document.getElementById("overlay2312");
+			var overlay2313 = document.getElementById("overlay2313");
+			var overlay2314 = document.getElementById("overlay2314");
+			var overlay2315 = document.getElementById("overlay2315");
+			var overlay2320 = document.getElementById("overlay2320");
+			var overlay233A = document.getElementById("overlay233A");
+			var overlay233B = document.getElementById("overlay233B");
+			var overlay233CD = document.getElementById("overlay233CD");
+			var overlay234A = document.getElementById("overlay234A");
+			var overlay234B = document.getElementById("overlay234B");
+			var overlay2331 = document.getElementById("overlay2331");
+			var overlay2332 = document.getElementById("overlay2332");
+			var overlay2333 = document.getElementById("overlay2333");
+			var overlay2334 = document.getElementById("overlay2334");
+			var overlay2341 = document.getElementById("overlay2341");
+			var overlay2342 = document.getElementById("overlay2342");
+			var overlay234C = document.getElementById("overlay234C");
+			var overlay1407 = document.getElementById("overlay1407");
+			var overlay1208 = document.getElementById("overlay1208");
+			var overlay1209 = document.getElementById("overlay1209");
+			var overlay1312 = document.getElementById("overlay1312");
+
+			overlay1.addEventListener("click", function () {
+				// オーバーレイ212がクリックされたときの処理
+				displaySchedule(0);
+			});
+
+			overlay2.addEventListener("click", function () {
+				// オーバーレイ211がクリックされたときの処理
+				displaySchedule(1);
+			});
+
+			overlay2121A.addEventListener("click", function () {
+				// オーバーレイ210がクリックされたときの処理
+				displaySchedule(2);
+			});
+
+			overlay2122.addEventListener("click", function () {
+				// オーバーレイ209がクリックされたときの処理
+				displaySchedule(3);
+			});
+
+			overlay2123.addEventListener("click", function () {
+				// オーバーレイ208がクリックされたときの処理
+				displaySchedule(4);
+			});
+
+			overlay2124.addEventListener("click", function () {
+				// オーバーレイ207がクリックされたときの処理
+				displaySchedule(5);
+			});
+
+			overlay2131.addEventListener("click", function () {
+				// オーバーレイ206がクリックされたときの処理
+				displaySchedule(6);
+			});
+
+			overlay2132.addEventListener("click", function () {
+				// オーバーレイ204がクリックされたときの処理
+				displaySchedule(7);
+			});
+
+			overlay2141A.addEventListener("click", function () {
+				// オーバーレイ203がクリックされたときの処理
+				displaySchedule(8);
+			});
+
+			overlay2141B.addEventListener("click", function () {
+				// オーバーレイ201がクリックされたときの処理
+				displaySchedule(9);
+			});
+
+			overlay2142A.addEventListener("click", function () {
+				// オーバーレイ117がクリックされたときの処理
+				displaySchedule(10);
+			});
+
+			overlay2142B.addEventListener("click", function () {
+				// オーバーレイ213がクリックされたときの処理
+				displaySchedule(11);
+			});
+
+			overlay2142C.addEventListener("click", function () {
+				// オーバーレイ212がクリックされたときの処理
+				displaySchedule(12);
+			});
+
+			overlay2142D.addEventListener("click", function () {
+				// オーバーレイ210がクリックされたときの処理
+				displaySchedule(13);
+			});
+
+			overlayE1.addEventListener("click", function () {
+				// オーバーレイ209がクリックされたときの処理
+				displaySchedule(14);
+			});
+
+			overlayE2.addEventListener("click", function () {
+				// オーバーレイ208がクリックされたときの処理
+				displaySchedule(15);
+			});
+
+			overlayE3.addEventListener("click", function () {
+				// オーバーレイ207がクリックされたときの処理
+				displaySchedule(16);
+			});
+
+			overlay2211A.addEventListener("click", function () {
+				// オーバーレイ206がクリックされたときの処理
+				displaySchedule(17);
+			});
+
+			overlay2211B.addEventListener("click", function () {
+				// オーバーレイ204がクリックされたときの処理
+				displaySchedule(18);
+			});
+
+			overlay2212A.addEventListener("click", function () {
+				// オーバーレイ203がクリックされたときの処理
+				displaySchedule(19);
+			});
+
+			overlay2212B.addEventListener("click", function () {
+				// オーバーレイ201がクリックされたときの処理
+				displaySchedule(20);
+			});
+
+			overlay2220A.addEventListener("click", function () {
+				// オーバーレイ117がクリックされたときの処理
+				displaySchedule(21);
+			});
+
+			overlay2220B.addEventListener("click", function () {
+				// オーバーレイ213がクリックされたときの処理
+				displaySchedule(22);
+			});
+
+			overlay2221A.addEventListener("click", function () {
+				// オーバーレイ212がクリックされたときの処理
+				displaySchedule(23);
+			});
+
+			overlay2221B.addEventListener("click", function () {
+				// オーバーレイ211がクリックされたときの処理
+				displaySchedule(24);
+			});
+
+			overlay2222.addEventListener("click", function () {
+				// オーバーレイ210がクリックされたときの処理
+				displaySchedule(25);
+			});
+
+			overlay2230.addEventListener("click", function () {
+				// オーバーレイ209がクリックされたときの処理
+				displaySchedule(26);
+			});
+
+			overlay2240A.addEventListener("click", function () {
+				// オーバーレイ208がクリックされたときの処理
+				displaySchedule(27);
+			});
+
+			overlay2240B.addEventListener("click", function () {
+				// オーバーレイ207がクリックされたときの処理
+				displaySchedule(28);
+			});
+
+			overlay2240C.addEventListener("click", function () {
+				// オーバーレイ206がクリックされたときの処理
+				displaySchedule(29);
+			});
+
+			overlay2240D.addEventListener("click", function () {
+				// オーバーレイ204がクリックされたときの処理
+				displaySchedule(30);
+			});
+
+			overlay2240E.addEventListener("click", function () {
+				// オーバーレイ203がクリックされたときの処理
+				displaySchedule(31);
+			});
+
+			overlay2240F.addEventListener("click", function () {
+				// オーバーレイ201がクリックされたときの処理
+				displaySchedule(32);
+			});
+
+			overlay231A.addEventListener("click", function () {
+				// オーバーレイ117がクリックされたときの処理
+				displaySchedule(33);
+			});
+
+			overlay231B.addEventListener("click", function () {
+				// オーバーレイ213がクリックされたときの処理
+				displaySchedule(34);
+			});
+
+			overlay231C.addEventListener("click", function () {
+				// オーバーレイ212がクリックされたときの処理
+				displaySchedule(35);
+			});
+
+			overlay231D.addEventListener("click", function () {
+				// オーバーレイ211がクリックされたときの処理
+				displaySchedule(36);
+			});
+
+			overlay2311.addEventListener("click", function () {
+				// オーバーレイ210がクリックされたときの処理
+				displaySchedule(37);
+			});
+
+			overlay2312.addEventListener("click", function () {
+				// オーバーレイ209がクリックされたときの処理
+				displaySchedule(38);
+			});
+
+			overlay2313.addEventListener("click", function () {
+				// オーバーレイ208がクリックされたときの処理
+				displaySchedule(39);
+			});
+
+			overlay2314.addEventListener("click", function () {
+				// オーバーレイ207がクリックされたときの処理
+				displaySchedule(40);
+			});
+
+			overlay2315.addEventListener("click", function () {
+				// オーバーレイ206がクリックされたときの処理
+				displaySchedule(41);
+			});
+
+			overlay2320.addEventListener("click", function () {
+				// オーバーレイ204がクリックされたときの処理
+				displaySchedule(42);
+			});
+
+			overlay233A.addEventListener("click", function () {
+				// オーバーレイ203がクリックされたときの処理
+				displaySchedule(43);
+			});
+
+			overlay233B.addEventListener("click", function () {
+				// オーバーレイ201がクリックされたときの処理
+				displaySchedule(44);
+			});
+
+			overlay233CD.addEventListener("click", function () {
+				// オーバーレイ117がクリックされたときの処理
+				displaySchedule(45);
+			});
+
+			overlay234A.addEventListener("click", function () {
+				// オーバーレイ213がクリックされたときの処理
+				displaySchedule(46);
+			});
+
+			overlay234B.addEventListener("click", function () {
+				// オーバーレイ212がクリックされたときの処理
+				displaySchedule(47);
+			});
+
+			overlay2331.addEventListener("click", function () {
+				// オーバーレイ211がクリックされたときの処理
+				displaySchedule(48);
+			});
+
+			overlay2332.addEventListener("click", function () {
+				// オーバーレイ210がクリックされたときの処理
+				displaySchedule(49);
+			});
+
+			overlay2333.addEventListener("click", function () {
+				// オーバーレイ209がクリックされたときの処理
+				displaySchedule(50);
+			});
+
+			overlay2334.addEventListener("click", function () {
+				// オーバーレイ208がクリックされたときの処理
+				displaySchedule(51);
+			});
+
+			overlay2342.addEventListener("click", function () {
+				// オーバーレイ207がクリックされたときの処理
+				displaySchedule(52);
+			});
+
+			overlay234C.addEventListener("click", function () {
+				// オーバーレイ206がクリックされたときの処理
+				displaySchedule(53);
+			});
+
+			overlay1407.addEventListener("click", function () {
+				// オーバーレイ204がクリックされたときの処理
+				displaySchedule(54);
+			});
+
+			overlay1208.addEventListener("click", function () {
+				// オーバーレイ203がクリックされたときの処理
+				displaySchedule(55);
+			});
+
+			overlay1209.addEventListener("click", function () {
+				// オーバーレイ201がクリックされたときの処理
+				displaySchedule(56);
+			});
+
+			overlay1312.addEventListener("click", function () {
+				// オーバーレイ117がクリックされたときの処理
+				displaySchedule(57);
+			});
+
+		}
+		function changeColor() {
+			//ここも必要数に応じて増やさなければいけない
+			var overlay1 = document.getElementById("overlay1");
+			var overlay2 = document.getElementById("overlay2");
+			var overlay2121A = document.getElementById("overlay2121A");
+			var overlay2122 = document.getElementById("overlay2122");
+			var overlay2123 = document.getElementById("overlay2123");
+			var overlay2124 = document.getElementById("overlay2124");
+			var overlay2131 = document.getElementById("overlay2131");
+			var overlay2132 = document.getElementById("overlay2132");
+			var overlay2141A = document.getElementById("overlay2141A");
+			var overlay2141B = document.getElementById("overlay2141B");
+			var overlay2142A = document.getElementById("overlay2142A");
+			var overlay2142B = document.getElementById("overlay2142B");
+			var overlay2142C = document.getElementById("overlay2142C");
+			var overlay2142D = document.getElementById("overlay2142D");
+			var overlayE1 = document.getElementById("overlayE1");
+			var overlayE2 = document.getElementById("overlayE2");
+			var overlayE3 = document.getElementById("overlayE3");
+			var overlay2211A = document.getElementById("overlay2211A");
+			var overlay2211B = document.getElementById("overlay2211B");
+			var overlay2212A = document.getElementById("overlay2212A");
+			var overlay2212B = document.getElementById("overlay2212B");
+			var overlay2220A = document.getElementById("overlay2220A");
+			var overlay2220B = document.getElementById("overlay2220B");
+			var overlay2221A = document.getElementById("overlay2221A");
+			var overlay2221B = document.getElementById("overlay2221B");
+			var overlay2222 = document.getElementById("overlay2222");
+			var overlay2230 = document.getElementById("overlay2230");
+			var overlay2240A = document.getElementById("overlay2240A");
+			var overlay2240B = document.getElementById("overlay2240B");
+			var overlay2240C = document.getElementById("overlay2240C");
+			var overlay2240D = document.getElementById("overlay2240D");
+			var overlay2240E = document.getElementById("overlay2240E");
+			var overlay2240F = document.getElementById("overlay2240F");
+			var overlay231A = document.getElementById("overlay231A");
+			var overlay231B = document.getElementById("overlay231B");
+			var overlay231C = document.getElementById("overlay231C");
+			var overlay231D = document.getElementById("overlay231D");
+			var overlay2311 = document.getElementById("overlay2311");
+			var overlay2312 = document.getElementById("overlay2312");
+			var overlay2313 = document.getElementById("overlay2313");
+			var overlay2314 = document.getElementById("overlay2314");
+			var overlay2315 = document.getElementById("overlay2315");
+			var overlay2320 = document.getElementById("overlay2320");
+			var overlay233A = document.getElementById("overlay233A");
+			var overlay233B = document.getElementById("overlay233B");
+			var overlay233CD = document.getElementById("overlay233CD");
+			var overlay234A = document.getElementById("overlay234A");
+			var overlay234B = document.getElementById("overlay234B");
+			var overlay2331 = document.getElementById("overlay2331");
+			var overlay2332 = document.getElementById("overlay2332");
+			var overlay2333 = document.getElementById("overlay2333");
+			var overlay2334 = document.getElementById("overlay2334");
+			var overlay2341 = document.getElementById("overlay2341");
+			var overlay2342 = document.getElementById("overlay2342");
+			var overlay234C = document.getElementById("overlay234C");
+			var overlay1407 = document.getElementById("overlay1407");
+			var overlay1208 = document.getElementById("overlay1208");
+			var overlay1209 = document.getElementById("overlay1209");
+			var overlay1312 = document.getElementById("overlay1312");
+			//
+			var currentTime = new Date().getHours();
+			var currentTime_M = new Date().getMinutes();
+			var currentDay = new Date().getDay();
+			var currentYear = new Date().getFullYear(); // 現在の時間を取
+			//ここから
+			// 配列を定義
+			// CSVファイルを取得
+
+			var c_time = [
+				{
+					name: 1,
+					start_h: 9,
+					start_m: 20,
+					end_h: 11,
+					end_m: 0
+				},
+				{
+					name: 2,
+					start_h: 11,
+					start_m: 10,
+					end_h: 12,
+					end_m: 50
+				},
+				{
+					name: 3,
+					start: 13,
+					start_m: 40,
+					end_h: 15,
+					end_m: 20
+				},
+				{
+					name: 4,
+					start_h: 15,
+					start_m: 30,
+					end_h: 17,
+					end_m: 10
+				},
+				{
+					name: 5,
+					start_h: 17,
+					start_m: 20,
+					end_h: 19,
+					end_m: 0
+				},
+				{
+					name: 0,
+					start_h: 0,
+					start_m: 0,
+					end_h: 7,
+					end_m: 0
+				}
+			]
+
+			var zero_room = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]//ここもzeros関数を使って教室の数から出したい
+			let currentM = currentTime * 60 + currentTime_M
+			for (var i = 0; i < 6; i++) {
+				if (currentM >= (c_time[i]['start_h'] * 60 + c_time[i]['start_m']) && (currentM <= c_time[i]['end_h'] * 60 + c_time[i]['end_m'])) {
+					var rec = c_time[i]['name']
+				}
+			}
+			T = currentTime_M % 25
+			Days = parseInt(T / 5)
+			Class_time = T % 5
+			for (i = 0; i < 70; i++) {//今は手で数えているがlen等を用いてエクセルを用いて数えたい
+				for (j = 0; j < 18; j++) {
+					//if(csvArray[i][2] == 2 && csvArray[i][1] == currentDay){//
+					if (csvArray[i][2] == Class_time + 1 && csvArray[i][1] == Days + 1) {
+						var tmp = csvArray[i][7]
+						zero_room[tmp] = 1
+					}
+				}
+			}
+			let YOU = ["月", "火", "水", "木", "金"]
+			console.log(YOU[Days])
+			console.log(Class_time + 1)
+			console.log(currentTime)
+			console.log(currentTime_M)
+			console.log(zero_room)
+
+			//曜日>>時間>>使用したい教室データ..(321, 325)>>for{if{}}で使いたいインスタンス使用する。それ以外の教室インスタンスは白のオーバーレイを使用
+
+			// 教室ごとに増やさなければいけない
+
+			if (zero_room[0] == 1) {
+				overlay1.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay1.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[1] == 1) {
+				overlay2.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[2] == 1) {
+				overlay2121A.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2121A.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[3] == 1) {
+				overlay2122.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2122.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[4] == 1) {
+				overlay2123.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2123.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[5] == 1) {
+				overlay2124.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2124.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[6] == 1) {
+				overlay2131.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2131.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[7] == 1) {
+				overlay2132.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2132.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[8] == 1) {
+				overlay2141A.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2141A.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[9] == 1) {
+				overlay2141B.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2141B.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[10] == 1) {
+				overlay2142A.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2142A.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[11] == 1) {
+				overlay2142B.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2142B.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[12] == 1) {
+				overlay2142C.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2142C.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[13] == 1) {
+				overlay2142D.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2142D.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[14] == 1) {
+				overlayE1.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlayE1.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[15] == 1) {
+				overlayE2.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlayE2.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[16] == 1) {
+				overlayE3.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlayE3.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[17] == 1) {
+				overlay2211A.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2211A.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[18] == 1) {
+				overlay2211B.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2211B.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[19] == 1) {
+				overlay2212A.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2212A.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[20] == 1) {
+				overlay2212B.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2212B.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[21] == 1) {
+				overlay2220A.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2220A.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[22] == 1) {
+				overlay2220B.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2220B.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[23] == 1) {
+				overlay2221A.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2221A.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[24] == 1) {
+				overlay2221B.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2221B.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[25] == 1) {
+				overlay2222.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2222.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[26] == 1) {
+				overlay2230.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2230.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[27] == 1) {
+				overlay2240A.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2240A.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[28] == 1) {
+				overlay2240B.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2240B.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[29] == 1) {
+				overlay2240C.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2240C.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[30] == 1) {
+				overlay2240D.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2240D.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[31] == 1) {
+				overlay2240E.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2240E.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[32] == 1) {
+				overlay2240F.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2240F.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[33] == 1) {
+				overlay231A.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay231A.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[34] == 1) {
+				overlay231B.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay231B.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[35] == 1) {
+				overlay231C.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay231C.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[36] == 1) {
+				overlay231D.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay231D.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[37] == 1) {
+				overlay2311.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2311.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[38] == 1) {
+				overlay2312.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2312.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[39] == 1) {
+				overlay2313.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2313.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[40] == 1) {
+				overlay2314.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2314.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[41] == 1) {
+				overlay2315.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2315.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[42] == 1) {
+				overlay2320.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2320.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[43] == 1) {
+				overlay233A.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay233A.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[44] == 1) {
+				overlay233B.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay233B.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[45] == 1) {
+				overlay233CD.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay233CD.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[46] == 1) {
+				overlay234A.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay234A.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[47] == 1) {
+				overlay234B.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay234B.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[48] == 1) {
+				overlay2331.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2331.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[49] == 1) {
+				overlay2332.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2332.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[50] == 1) {
+				overlay2333.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2333.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[51] == 1) {
+				overlay2334.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2334.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[52] == 1) {
+				overlay2341.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2341.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[53] == 1) {
+				overlay2342.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay2342.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[54] == 1) {
+				overlay234C.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay234C.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[55] == 1) {
+				overlay1407.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay1407.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[56] == 1) {
+				overlay1208.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay1208.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[57] == 1) {
+				overlay1209.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay1209.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+			if (zero_room[58] == 1) {
+				overlay1312.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+			} else {
+				;
+				overlay1312.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+			}
+		}
+
+		// 初期表示
+		function initialize() {
+			changeColor();
+			addClickListeners();
+		}
+
+		setInterval(initialize, 6000);</script>
 </body>
 </html>
