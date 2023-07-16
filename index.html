@@ -4,580 +4,1279 @@
     <meta charset="utf-8" />
     <title>1_2</title>
 <style>
-    #image-container{
-        display: inline-block;
-        position: relative;
-    }
-
-    #overlay1 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 196px;
-	 top: 326px;
-	 width: 2.875000%;
-	 height: 3.598000%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 196px;
-	 top: 355px;
-	 width: 2.937500%;
-	 height: 9.181100%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2121A {
-	 display: inline-block;
-	 position: absolute;
-	 left: 206px;
-	 top: 442px;
-	 width: 2.250000%;
-	 height: 2.977700%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2122 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 197px;
-	 top: 469px;
-	 width: 2.812500%;
-	 height: 2.977700%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2123 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 197px;
-	 top: 493px;
-	 width: 2.875000%;
-	 height: 2.729500%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2124 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 197px;
-	 top: 518px;
-	 width: 2.812500%;
-	 height: 2.729500%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2131 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 196px;
-	 top: 556px;
-	 width: 3.000000%;
-	 height: 6.327500%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2132 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 198px;
-	 top: 608px;
-	 width: 2.812500%;
-	 height: 5.831300%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2141A {
-	 display: inline-block;
-	 position: absolute;
-	 left: 195px;
-	 top: 670px;
-	 width: 3.062500%;
-	 height: 2.977700%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2141B {
-	 display: inline-block;
-	 position: absolute;
-	 left: 195px;
-	 top: 696px;
-	 width: 3.000000%;
-	 height: 2.977700%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2142A {
-	 display: inline-block;
-	 position: absolute;
-	 left: 195px;
-	 top: 721px;
-	 width: 1.375000%;
-	 height: 2.109200%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2142B {
-	 display: inline-block;
-	 position: absolute;
-	 left: 219px;
-	 top: 732px;
-	 width: 1.500000%;
-	 height: 2.109200%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2142C {
-	 display: inline-block;
-	 position: absolute;
-	 left: 195px;
-	 top: 737px;
-	 width: 1.500000%;
-	 height: 3.970200%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2142D {
-	 display: inline-block;
-	 position: absolute;
-	 left: 220px;
-	 top: 749px;
-	 width: 1.437500%;
-	 height: 2.605500%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlayE1 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 92px;
-	 top: 459px;
-	 width: 4.375000%;
-	 height: 8.064500%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlayE2 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 93px;
-	 top: 574px;
-	 width: 4.125000%;
-	 height: 7.816400%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlayE3 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 92px;
-	 top: 689px;
-	 width: 4.312500%;
-	 height: 7.940400%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2211A {
-	 display: inline-block;
-	 position: absolute;
-	 left: 567px;
-	 top: 335px;
-	 width: 3.250000%;
-	 height: 2.605500%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2211B {
-	 display: inline-block;
-	 position: absolute;
-	 left: 568px;
-	 top: 357px;
-	 width: 3.062500%;
-	 height: 3.101700%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2212A {
-	 display: inline-block;
-	 position: absolute;
-	 left: 568px;
-	 top: 385px;
-	 width: 3.000000%;
-	 height: 2.853600%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2212B {
-	 display: inline-block;
-	 position: absolute;
-	 left: 568px;
-	 top: 409px;
-	 width: 3.250000%;
-	 height: 3.101700%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2220A {
-	 display: inline-block;
-	 position: absolute;
-	 left: 567px;
-	 top: 447px;
-	 width: 3.312500%;
-	 height: 1.985100%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2220B {
-	 display: inline-block;
-	 position: absolute;
-	 left: 566px;
-	 top: 465px;
-	 width: 3.375000%;
-	 height: 1.985100%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2221A {
-	 display: inline-block;
-	 position: absolute;
-	 left: 567px;
-	 top: 482px;
-	 width: 1.687500%;
-	 height: 2.853600%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2221B {
-	 display: inline-block;
-	 position: absolute;
-	 left: 595px;
-	 top: 481px;
-	 width: 1.375000%;
-	 height: 4.094300%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2222 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 568px;
-	 top: 517px;
-	 width: 3.125000%;
-	 height: 3.225800%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2230 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 570px;
-	 top: 560px;
-	 width: 2.875000%;
-	 height: 12.655100%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2240A {
-	 display: inline-block;
-	 position: absolute;
-	 left: 567px;
-	 top: 674px;
-	 width: 3.187500%;
-	 height: 2.481400%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2240B {
-	 display: inline-block;
-	 position: absolute;
-	 left: 568px;
-	 top: 693px;
-	 width: 3.062500%;
-	 height: 1.861000%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2240C {
-	 display: inline-block;
-	 position: absolute;
-	 left: 570px;
-	 top: 709px;
-	 width: 3.062500%;
-	 height: 2.109200%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2240D {
-	 display: inline-block;
-	 position: absolute;
-	 left: 567px;
-	 top: 726px;
-	 width: 3.250000%;
-	 height: 1.861000%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2240E {
-	 display: inline-block;
-	 position: absolute;
-	 left: 572px;
-	 top: 742px;
-	 width: 2.750000%;
-	 height: 1.612900%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2240F {
-	 display: inline-block;
-	 position: absolute;
-	 left: 567px;
-	 top: 759px;
-	 width: 3.250000%;
-	 height: 1.985100%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay231A {
-	 display: inline-block;
-	 position: absolute;
-	 left: 897px;
-	 top: 333px;
-	 width: 1.562500%;
-	 height: 3.225800%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay231B {
-	 display: inline-block;
-	 position: absolute;
-	 left: 898px;
-	 top: 358px;
-	 width: 1.437500%;
-	 height: 3.101700%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay231C {
-	 display: inline-block;
-	 position: absolute;
-	 left: 896px;
-	 top: 384px;
-	 width: 1.625000%;
-	 height: 3.101700%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay231D {
-	 display: inline-block;
-	 position: absolute;
-	 left: 898px;
-	 top: 411px;
-	 width: 1.437500%;
-	 height: 2.977700%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2311 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 931px;
-	 top: 332px;
-	 width: 1.562500%;
-	 height: 3.101700%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2312 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 932px;
-	 top: 358px;
-	 width: 1.562500%;
-	 height: 2.977700%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2313 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 933px;
-	 top: 383px;
-	 width: 1.500000%;
-	 height: 3.225800%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2314 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 933px;
-	 top: 411px;
-	 width: 1.437500%;
-	 height: 2.481400%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2315 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 933px;
-	 top: 436px;
-	 width: 1.625000%;
-	 height: 0.868500%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2320 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 897px;
-	 top: 449px;
-	 width: 4.000000%;
-	 height: 9.925600%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay233A {
-	 display: inline-block;
-	 position: absolute;
-	 left: 899px;
-	 top: 566px;
-	 width: 1.375000%;
-	 height: 3.225800%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay233B {
-	 display: inline-block;
-	 position: absolute;
-	 left: 899px;
-	 top: 592px;
-	 width: 1.375000%;
-	 height: 2.729500%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay233CD {
-	 display: inline-block;
-	 position: absolute;
-	 left: 898px;
-	 top: 616px;
-	 width: 1.500000%;
-	 height: 6.203500%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay234A {
-	 display: inline-block;
-	 position: absolute;
-	 left: 899px;
-	 top: 681px;
-	 width: 1.187500%;
-	 height: 4.466500%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay234B {
-	 display: inline-block;
-	 position: absolute;
-	 left: 897px;
-	 top: 719px;
-	 width: 1.500000%;
-	 height: 4.714600%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2331 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 932px;
-	 top: 563px;
-	 width: 1.687500%;
-	 height: 3.101700%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2332 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 932px;
-	 top: 589px;
-	 width: 1.687500%;
-	 height: 3.349900%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2333 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 931px;
-	 top: 617px;
-	 width: 1.562500%;
-	 height: 2.853600%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2334 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 930px;
-	 top: 644px;
-	 width: 1.875000%;
-	 height: 2.977700%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2341 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 932px;
-	 top: 678px;
-	 width: 1.562500%;
-	 height: 4.838700%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay2342 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 931px;
-	 top: 717px;
-	 width: 1.437500%;
-	 height: 5.086800%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay234C {
-	 display: inline-block;
-	 position: absolute;
-	 left: 898px;
-	 top: 758px;
-	 width: 3.437500%;
-	 height: 2.977700%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay1407 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 1332px;
-	 top: 209px;
-	 width: 1.375000%;
-	 height: 2.853600%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay1208 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 751px;
-	 top: 119px;
-	 width: 0.875000%;
-	 height: 3.349900%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay1209 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 733px;
-	 top: 124px;
-	 width: 1.062500%;
-	 height: 2.729500%;
-	 mix-blend-mode: multiply;
-	 }
-	#overlay1312 {
-	 display: inline-block;
-	 position: absolute;
-	 left: 1039px;
-	 top: 113px;
-	 width: 1.375000%;
-	 height: 1.116600%;
-	 mix-blend-mode: multiply;
-	 }
-    #header {
-        display: flex;
-        background-color: rgba(46,86,160,255);
-        color: #fff;
-        margin-bottom: 1%;
-    }
-
-    #site-name {
-        font-size: 120%;
-        font-weight: bold;
-        margin: auto;
-    }
-        #site-name:hover {
-            cursor: pointer;
+    @media screen and (min-width: 930px) {
+        #image-container {
+            display: inline-block;
+            position: relative;
         }
 
-
-    #schedule-container {
-        padding: 1%;
-        border: 1px solid #ccc;
-        background-color: #f9f9f9;
-        order: 1;
-    }
-
-        #schedule-container th {
-            white-space: nowrap;
+        #overlay1 {
+            display: inline-block;
+            position: absolute;
+            left: 196px;
+            top: 326px;
+            width: 2.875000%;
+            height: 3.598000%;
+            mix-blend-mode: multiply;
         }
 
-    #main {
-        display: flex;
-        flex-direction: column;
+        #overlay2 {
+            display: inline-block;
+            position: absolute;
+            left: 196px;
+            top: 355px;
+            width: 2.937500%;
+            height: 9.181100%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2121A {
+            display: inline-block;
+            position: absolute;
+            left: 206px;
+            top: 442px;
+            width: 2.250000%;
+            height: 2.977700%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2122 {
+            display: inline-block;
+            position: absolute;
+            left: 197px;
+            top: 469px;
+            width: 2.812500%;
+            height: 2.977700%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2123 {
+            display: inline-block;
+            position: absolute;
+            left: 197px;
+            top: 493px;
+            width: 2.875000%;
+            height: 2.729500%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2124 {
+            display: inline-block;
+            position: absolute;
+            left: 197px;
+            top: 518px;
+            width: 2.812500%;
+            height: 2.729500%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2131 {
+            display: inline-block;
+            position: absolute;
+            left: 196px;
+            top: 556px;
+            width: 3.000000%;
+            height: 6.327500%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2132 {
+            display: inline-block;
+            position: absolute;
+            left: 198px;
+            top: 608px;
+            width: 2.812500%;
+            height: 5.831300%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2141A {
+            display: inline-block;
+            position: absolute;
+            left: 195px;
+            top: 670px;
+            width: 3.062500%;
+            height: 2.977700%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2141B {
+            display: inline-block;
+            position: absolute;
+            left: 195px;
+            top: 696px;
+            width: 3.000000%;
+            height: 2.977700%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2142A {
+            display: inline-block;
+            position: absolute;
+            left: 195px;
+            top: 721px;
+            width: 1.375000%;
+            height: 2.109200%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2142B {
+            display: inline-block;
+            position: absolute;
+            left: 219px;
+            top: 732px;
+            width: 1.500000%;
+            height: 2.109200%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2142C {
+            display: inline-block;
+            position: absolute;
+            left: 195px;
+            top: 737px;
+            width: 1.500000%;
+            height: 3.970200%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2142D {
+            display: inline-block;
+            position: absolute;
+            left: 220px;
+            top: 749px;
+            width: 1.437500%;
+            height: 2.605500%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlayE1 {
+            display: inline-block;
+            position: absolute;
+            left: 92px;
+            top: 459px;
+            width: 4.375000%;
+            height: 8.064500%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlayE2 {
+            display: inline-block;
+            position: absolute;
+            left: 93px;
+            top: 574px;
+            width: 4.125000%;
+            height: 7.816400%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlayE3 {
+            display: inline-block;
+            position: absolute;
+            left: 92px;
+            top: 689px;
+            width: 4.312500%;
+            height: 7.940400%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2211A {
+            display: inline-block;
+            position: absolute;
+            left: 567px;
+            top: 335px;
+            width: 3.250000%;
+            height: 2.605500%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2211B {
+            display: inline-block;
+            position: absolute;
+            left: 568px;
+            top: 357px;
+            width: 3.062500%;
+            height: 3.101700%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2212A {
+            display: inline-block;
+            position: absolute;
+            left: 568px;
+            top: 385px;
+            width: 3.000000%;
+            height: 2.853600%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2212B {
+            display: inline-block;
+            position: absolute;
+            left: 568px;
+            top: 409px;
+            width: 3.250000%;
+            height: 3.101700%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2220A {
+            display: inline-block;
+            position: absolute;
+            left: 567px;
+            top: 447px;
+            width: 3.312500%;
+            height: 1.985100%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2220B {
+            display: inline-block;
+            position: absolute;
+            left: 566px;
+            top: 465px;
+            width: 3.375000%;
+            height: 1.985100%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2221A {
+            display: inline-block;
+            position: absolute;
+            left: 567px;
+            top: 482px;
+            width: 1.687500%;
+            height: 2.853600%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2221B {
+            display: inline-block;
+            position: absolute;
+            left: 595px;
+            top: 481px;
+            width: 1.375000%;
+            height: 4.094300%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2222 {
+            display: inline-block;
+            position: absolute;
+            left: 568px;
+            top: 517px;
+            width: 3.125000%;
+            height: 3.225800%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2230 {
+            display: inline-block;
+            position: absolute;
+            left: 570px;
+            top: 560px;
+            width: 2.875000%;
+            height: 12.655100%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2240A {
+            display: inline-block;
+            position: absolute;
+            left: 567px;
+            top: 674px;
+            width: 3.187500%;
+            height: 2.481400%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2240B {
+            display: inline-block;
+            position: absolute;
+            left: 568px;
+            top: 693px;
+            width: 3.062500%;
+            height: 1.861000%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2240C {
+            display: inline-block;
+            position: absolute;
+            left: 570px;
+            top: 709px;
+            width: 3.062500%;
+            height: 2.109200%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2240D {
+            display: inline-block;
+            position: absolute;
+            left: 567px;
+            top: 726px;
+            width: 3.250000%;
+            height: 1.861000%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2240E {
+            display: inline-block;
+            position: absolute;
+            left: 572px;
+            top: 742px;
+            width: 2.750000%;
+            height: 1.612900%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2240F {
+            display: inline-block;
+            position: absolute;
+            left: 567px;
+            top: 759px;
+            width: 3.250000%;
+            height: 1.985100%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay231A {
+            display: inline-block;
+            position: absolute;
+            left: 897px;
+            top: 333px;
+            width: 1.562500%;
+            height: 3.225800%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay231B {
+            display: inline-block;
+            position: absolute;
+            left: 898px;
+            top: 358px;
+            width: 1.437500%;
+            height: 3.101700%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay231C {
+            display: inline-block;
+            position: absolute;
+            left: 896px;
+            top: 384px;
+            width: 1.625000%;
+            height: 3.101700%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay231D {
+            display: inline-block;
+            position: absolute;
+            left: 898px;
+            top: 411px;
+            width: 1.437500%;
+            height: 2.977700%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2311 {
+            display: inline-block;
+            position: absolute;
+            left: 931px;
+            top: 332px;
+            width: 1.562500%;
+            height: 3.101700%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2312 {
+            display: inline-block;
+            position: absolute;
+            left: 932px;
+            top: 358px;
+            width: 1.562500%;
+            height: 2.977700%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2313 {
+            display: inline-block;
+            position: absolute;
+            left: 933px;
+            top: 383px;
+            width: 1.500000%;
+            height: 3.225800%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2314 {
+            display: inline-block;
+            position: absolute;
+            left: 933px;
+            top: 411px;
+            width: 1.437500%;
+            height: 2.481400%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2315 {
+            display: inline-block;
+            position: absolute;
+            left: 933px;
+            top: 436px;
+            width: 1.625000%;
+            height: 0.868500%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2320 {
+            display: inline-block;
+            position: absolute;
+            left: 897px;
+            top: 449px;
+            width: 4.000000%;
+            height: 9.925600%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay233A {
+            display: inline-block;
+            position: absolute;
+            left: 899px;
+            top: 566px;
+            width: 1.375000%;
+            height: 3.225800%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay233B {
+            display: inline-block;
+            position: absolute;
+            left: 899px;
+            top: 592px;
+            width: 1.375000%;
+            height: 2.729500%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay233CD {
+            display: inline-block;
+            position: absolute;
+            left: 898px;
+            top: 616px;
+            width: 1.500000%;
+            height: 6.203500%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay234A {
+            display: inline-block;
+            position: absolute;
+            left: 899px;
+            top: 681px;
+            width: 1.187500%;
+            height: 4.466500%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay234B {
+            display: inline-block;
+            position: absolute;
+            left: 897px;
+            top: 719px;
+            width: 1.500000%;
+            height: 4.714600%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2331 {
+            display: inline-block;
+            position: absolute;
+            left: 932px;
+            top: 563px;
+            width: 1.687500%;
+            height: 3.101700%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2332 {
+            display: inline-block;
+            position: absolute;
+            left: 932px;
+            top: 589px;
+            width: 1.687500%;
+            height: 3.349900%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2333 {
+            display: inline-block;
+            position: absolute;
+            left: 931px;
+            top: 617px;
+            width: 1.562500%;
+            height: 2.853600%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2334 {
+            display: inline-block;
+            position: absolute;
+            left: 930px;
+            top: 644px;
+            width: 1.875000%;
+            height: 2.977700%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2341 {
+            display: inline-block;
+            position: absolute;
+            left: 932px;
+            top: 678px;
+            width: 1.562500%;
+            height: 4.838700%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay2342 {
+            display: inline-block;
+            position: absolute;
+            left: 931px;
+            top: 717px;
+            width: 1.437500%;
+            height: 5.086800%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay234C {
+            display: inline-block;
+            position: absolute;
+            left: 898px;
+            top: 758px;
+            width: 3.437500%;
+            height: 2.977700%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay1407 {
+            display: inline-block;
+            position: absolute;
+            left: 1332px;
+            top: 209px;
+            width: 1.375000%;
+            height: 2.853600%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay1208 {
+            display: inline-block;
+            position: absolute;
+            left: 751px;
+            top: 119px;
+            width: 0.875000%;
+            height: 3.349900%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay1209 {
+            display: inline-block;
+            position: absolute;
+            left: 733px;
+            top: 124px;
+            width: 1.062500%;
+            height: 2.729500%;
+            mix-blend-mode: multiply;
+        }
+
+        #overlay1312 {
+            display: inline-block;
+            position: absolute;
+            left: 1039px;
+            top: 113px;
+            width: 1.375000%;
+            height: 1.116600%;
+            mix-blend-mode: multiply;
+        }
+
+        #header {
+            display: flex;
+            background-color: rgba(46,86,160,255);
+            color: #fff;
+            margin-bottom: 1%;
+        }
+
+        #site-name {
+            font-size: 120%;
+            font-weight: bold;
+            margin: auto;
+        }
+
+            #site-name:hover {
+                cursor: pointer;
+            }
+
+
+        #schedule-container {
+            padding: 1%;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            order: 1;
+        }
+
+            #schedule-container th {
+                white-space: nowrap;
+            }
+
+        #main {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #main-image {
+            width: 100%;
+            overflow: auto;
+            order: 2
+        }
     }
 
-    #main-image{
-		width: 100%;
-		overflow: auto;
-		order: 2
-    }
+        @media screen and (max-width: 930px) {
+            #image-container {
+                display: inline-block;
+                position: relative;
+            }
+
+            #overlay1 {
+                display: inline-block;
+                position: absolute;
+                left: 196px;
+                top: 326px;
+                width: 2.875000%;
+                height: 3.598000%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2 {
+                display: inline-block;
+                position: absolute;
+                left: 196px;
+                top: 355px;
+                width: 2.937500%;
+                height: 9.181100%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2121A {
+                display: inline-block;
+                position: absolute;
+                left: 206px;
+                top: 442px;
+                width: 2.250000%;
+                height: 2.977700%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2122 {
+                display: inline-block;
+                position: absolute;
+                left: 197px;
+                top: 469px;
+                width: 2.812500%;
+                height: 2.977700%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2123 {
+                display: inline-block;
+                position: absolute;
+                left: 197px;
+                top: 493px;
+                width: 2.875000%;
+                height: 2.729500%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2124 {
+                display: inline-block;
+                position: absolute;
+                left: 197px;
+                top: 518px;
+                width: 2.812500%;
+                height: 2.729500%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2131 {
+                display: inline-block;
+                position: absolute;
+                left: 196px;
+                top: 556px;
+                width: 3.000000%;
+                height: 6.327500%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2132 {
+                display: inline-block;
+                position: absolute;
+                left: 198px;
+                top: 608px;
+                width: 2.812500%;
+                height: 5.831300%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2141A {
+                display: inline-block;
+                position: absolute;
+                left: 195px;
+                top: 670px;
+                width: 3.062500%;
+                height: 2.977700%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2141B {
+                display: inline-block;
+                position: absolute;
+                left: 195px;
+                top: 696px;
+                width: 3.000000%;
+                height: 2.977700%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2142A {
+                display: inline-block;
+                position: absolute;
+                left: 195px;
+                top: 721px;
+                width: 1.375000%;
+                height: 2.109200%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2142B {
+                display: inline-block;
+                position: absolute;
+                left: 219px;
+                top: 732px;
+                width: 1.500000%;
+                height: 2.109200%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2142C {
+                display: inline-block;
+                position: absolute;
+                left: 195px;
+                top: 737px;
+                width: 1.500000%;
+                height: 3.970200%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2142D {
+                display: inline-block;
+                position: absolute;
+                left: 220px;
+                top: 749px;
+                width: 1.437500%;
+                height: 2.605500%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlayE1 {
+                display: inline-block;
+                position: absolute;
+                left: 92px;
+                top: 459px;
+                width: 4.375000%;
+                height: 8.064500%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlayE2 {
+                display: inline-block;
+                position: absolute;
+                left: 93px;
+                top: 574px;
+                width: 4.125000%;
+                height: 7.816400%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlayE3 {
+                display: inline-block;
+                position: absolute;
+                left: 92px;
+                top: 689px;
+                width: 4.312500%;
+                height: 7.940400%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2211A {
+                display: inline-block;
+                position: absolute;
+                left: 567px;
+                top: 335px;
+                width: 3.250000%;
+                height: 2.605500%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2211B {
+                display: inline-block;
+                position: absolute;
+                left: 568px;
+                top: 357px;
+                width: 3.062500%;
+                height: 3.101700%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2212A {
+                display: inline-block;
+                position: absolute;
+                left: 568px;
+                top: 385px;
+                width: 3.000000%;
+                height: 2.853600%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2212B {
+                display: inline-block;
+                position: absolute;
+                left: 568px;
+                top: 409px;
+                width: 3.250000%;
+                height: 3.101700%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2220A {
+                display: inline-block;
+                position: absolute;
+                left: 567px;
+                top: 447px;
+                width: 3.312500%;
+                height: 1.985100%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2220B {
+                display: inline-block;
+                position: absolute;
+                left: 566px;
+                top: 465px;
+                width: 3.375000%;
+                height: 1.985100%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2221A {
+                display: inline-block;
+                position: absolute;
+                left: 567px;
+                top: 482px;
+                width: 1.687500%;
+                height: 2.853600%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2221B {
+                display: inline-block;
+                position: absolute;
+                left: 595px;
+                top: 481px;
+                width: 1.375000%;
+                height: 4.094300%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2222 {
+                display: inline-block;
+                position: absolute;
+                left: 568px;
+                top: 517px;
+                width: 3.125000%;
+                height: 3.225800%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2230 {
+                display: inline-block;
+                position: absolute;
+                left: 570px;
+                top: 560px;
+                width: 2.875000%;
+                height: 12.655100%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2240A {
+                display: inline-block;
+                position: absolute;
+                left: 567px;
+                top: 674px;
+                width: 3.187500%;
+                height: 2.481400%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2240B {
+                display: inline-block;
+                position: absolute;
+                left: 568px;
+                top: 693px;
+                width: 3.062500%;
+                height: 1.861000%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2240C {
+                display: inline-block;
+                position: absolute;
+                left: 570px;
+                top: 709px;
+                width: 3.062500%;
+                height: 2.109200%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2240D {
+                display: inline-block;
+                position: absolute;
+                left: 567px;
+                top: 726px;
+                width: 3.250000%;
+                height: 1.861000%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2240E {
+                display: inline-block;
+                position: absolute;
+                left: 572px;
+                top: 742px;
+                width: 2.750000%;
+                height: 1.612900%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2240F {
+                display: inline-block;
+                position: absolute;
+                left: 567px;
+                top: 759px;
+                width: 3.250000%;
+                height: 1.985100%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay231A {
+                display: inline-block;
+                position: absolute;
+                left: 897px;
+                top: 333px;
+                width: 1.562500%;
+                height: 3.225800%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay231B {
+                display: inline-block;
+                position: absolute;
+                left: 898px;
+                top: 358px;
+                width: 1.437500%;
+                height: 3.101700%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay231C {
+                display: inline-block;
+                position: absolute;
+                left: 896px;
+                top: 384px;
+                width: 1.625000%;
+                height: 3.101700%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay231D {
+                display: inline-block;
+                position: absolute;
+                left: 898px;
+                top: 411px;
+                width: 1.437500%;
+                height: 2.977700%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2311 {
+                display: inline-block;
+                position: absolute;
+                left: 931px;
+                top: 332px;
+                width: 1.562500%;
+                height: 3.101700%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2312 {
+                display: inline-block;
+                position: absolute;
+                left: 932px;
+                top: 358px;
+                width: 1.562500%;
+                height: 2.977700%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2313 {
+                display: inline-block;
+                position: absolute;
+                left: 933px;
+                top: 383px;
+                width: 1.500000%;
+                height: 3.225800%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2314 {
+                display: inline-block;
+                position: absolute;
+                left: 933px;
+                top: 411px;
+                width: 1.437500%;
+                height: 2.481400%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2315 {
+                display: inline-block;
+                position: absolute;
+                left: 933px;
+                top: 436px;
+                width: 1.625000%;
+                height: 0.868500%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2320 {
+                display: inline-block;
+                position: absolute;
+                left: 897px;
+                top: 449px;
+                width: 4.000000%;
+                height: 9.925600%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay233A {
+                display: inline-block;
+                position: absolute;
+                left: 899px;
+                top: 566px;
+                width: 1.375000%;
+                height: 3.225800%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay233B {
+                display: inline-block;
+                position: absolute;
+                left: 899px;
+                top: 592px;
+                width: 1.375000%;
+                height: 2.729500%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay233CD {
+                display: inline-block;
+                position: absolute;
+                left: 898px;
+                top: 616px;
+                width: 1.500000%;
+                height: 6.203500%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay234A {
+                display: inline-block;
+                position: absolute;
+                left: 899px;
+                top: 681px;
+                width: 1.187500%;
+                height: 4.466500%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay234B {
+                display: inline-block;
+                position: absolute;
+                left: 897px;
+                top: 719px;
+                width: 1.500000%;
+                height: 4.714600%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2331 {
+                display: inline-block;
+                position: absolute;
+                left: 932px;
+                top: 563px;
+                width: 1.687500%;
+                height: 3.101700%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2332 {
+                display: inline-block;
+                position: absolute;
+                left: 932px;
+                top: 589px;
+                width: 1.687500%;
+                height: 3.349900%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2333 {
+                display: inline-block;
+                position: absolute;
+                left: 931px;
+                top: 617px;
+                width: 1.562500%;
+                height: 2.853600%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2334 {
+                display: inline-block;
+                position: absolute;
+                left: 930px;
+                top: 644px;
+                width: 1.875000%;
+                height: 2.977700%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2341 {
+                display: inline-block;
+                position: absolute;
+                left: 932px;
+                top: 678px;
+                width: 1.562500%;
+                height: 4.838700%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay2342 {
+                display: inline-block;
+                position: absolute;
+                left: 931px;
+                top: 717px;
+                width: 1.437500%;
+                height: 5.086800%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay234C {
+                display: inline-block;
+                position: absolute;
+                left: 898px;
+                top: 758px;
+                width: 3.437500%;
+                height: 2.977700%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay1407 {
+                display: inline-block;
+                position: absolute;
+                left: 1332px;
+                top: 209px;
+                width: 1.375000%;
+                height: 2.853600%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay1208 {
+                display: inline-block;
+                position: absolute;
+                left: 751px;
+                top: 119px;
+                width: 0.875000%;
+                height: 3.349900%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay1209 {
+                display: inline-block;
+                position: absolute;
+                left: 733px;
+                top: 124px;
+                width: 1.062500%;
+                height: 2.729500%;
+                mix-blend-mode: multiply;
+            }
+
+            #overlay1312 {
+                display: inline-block;
+                position: absolute;
+                left: 1039px;
+                top: 113px;
+                width: 1.375000%;
+                height: 1.116600%;
+                mix-blend-mode: multiply;
+            }
+
+            #header {
+                display: flex;
+                background-color: rgba(46,86,160,255);
+                color: #fff;
+                margin-bottom: 1%;
+            }
+
+            #site-name {
+                font-size: 120%;
+                font-weight: bold;
+                margin: auto;
+            }
+
+                #site-name:hover {
+                    cursor: pointer;
+                }
+
+
+            #schedule-container {
+                padding: 1%;
+                border: 1px solid #ccc;
+                background-color: #f9f9f9;
+                order: 1;
+            }
+
+                #schedule-container th {
+                    white-space: nowrap;
+                }
+
+            #main {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #main-image {
+                width: 100%;
+                overflow: auto;
+                order: 2
+            }
+        }
     
 
 </style>
