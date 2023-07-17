@@ -771,8 +771,8 @@
                 const touchDistance = Math.hypot(touches[0].clientX - touches[1].clientX, touches[0].clientY - touches[1].clientY);
                 if (lastTouchDistance !== 0) {
                     scale *= touchDistance / lastTouchDistance;
-                    scale = Math.max(1, Math.min(2.5, scale));
-                    image.style.transform = `scale(${scale})`;
+					scale = Math.max(1, Math.min(2.5, scale));
+					zoomContainer.style.transform = `scale(${scale})`;
                 }
                 lastTouchDistance = touchDistance;
             }
