@@ -638,7 +638,6 @@
 		}
         #image {
             height: 100vh;
-            transform-origin: top left;
         }
         
         
@@ -792,9 +791,7 @@
             zoomContainer.style.transform = `scale(${scale})`;
         });
 
-        zoomContainer.addEventListener('touchend', () => {
-            lastTouchDistance = null;
-        });
+        
 
 
 	// 画像の一部の色を変える関数
