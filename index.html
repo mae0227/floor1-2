@@ -636,9 +636,10 @@
 			width: 100%;
 			overflow: auto;
 		}
-		#image{
-			height: 100vh;
-		}
+        #image {
+            height: 100vh;
+            transform-origin: top left;
+        }
         
 		/*#room1-2 div{
 			background-color: rgba(255,0,0,0.5);
@@ -772,7 +773,7 @@
                 if (lastTouchDistance !== 0) {
                     scale *= touchDistance / lastTouchDistance;
 					scale = Math.max(1, Math.min(2.5, scale));
-					zoomContainer.style.transform = `scale(${scale})`;
+					image.style.transform = `scale(${scale})`;
                 }
                 lastTouchDistance = touchDistance;
             }
