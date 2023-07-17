@@ -641,6 +641,7 @@
             transform-origin: top left;
         }
         
+        
 		/*#room1-2 div{
 			background-color: rgba(255,0,0,0.5);
 		}*/
@@ -760,28 +761,40 @@
 		});
 
 
-        let lastTouchDistance = 0;
+        let lastTouchDistance = null;
 
         zoomContainer.addEventListener('touchmove', (event) => {
-            event.preventDefault(); // デフォルトのタッチスクロールを無効化
+            event.preventDefault();
 
-            const touches = event.touches;
-            if (touches.length >= 2) {
-                // タッチされた2つの指の距離を計算してズーム倍率を調整
-                const touchDistance = Math.hypot(touches[0].clientX - touches[1].clientX, touches[0].clientY - touches[1].clientY);
-                if (lastTouchDistance !== 0) {
-                    scale *= touchDistance / lastTouchDistance;
-					scale = Math.max(1, Math.min(2.5, scale));
-					zoomContainer.style.transform = `scale(${scale})`;
+            if (event.touches.length === 2) {
+                // タッチイベントが2つある場合（ピンチイン・ピンチアウト）
+                const touchDistance = Math.hypot(
+                    event.touches[0].clientX - event.touches[1].clientX,
+                    event.touches[0].clientY - event.touches[1].clientY
+                );
+
+                if (lastTouchDistance) {
+                    // 前回のタッチ距離との比率に応じてズーム倍率を調整します
+                    const zoomRatio = touchDistance / lastTouchDistance;
+                    scale *= zoomRatio;
                 }
+
                 lastTouchDistance = touchDistance;
+            } else {
+                // タッチイベントが1つだけの場合（スクロール）
+                lastTouchDistance = null;
             }
+
+            // 最小・最大ズーム倍率の制限（任意で設定）
+            scale = Math.max(1, Math.min(2, scale));
+
+            // ズーム倍率に合わせて要素のサイズを変更します
+            zoomContainer.style.transform = `scale(${scale})`;
         });
 
         zoomContainer.addEventListener('touchend', () => {
-            lastTouchDistance = 0;
+            lastTouchDistance = null;
         });
-
 
 
 	// 画像の一部の色を変える関数
